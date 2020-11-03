@@ -1,1 +1,48 @@
-body {background-color:turquoise ;}
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main {
+  display: flex;
+  flex-direction: row;
+  height: 6.25rem;
+  width: 50rem;
+  margin: 0 auto;
+}
+
+nav.main .logo {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  height: 6.25rem;
+  width: 8.5rem;
+  text-align: center;
+}
+
+nav.main .logo object {
+  height: 10rem;
+  width: 15rem;
+  margin-top: -1rem;
+}
+
+ul.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 8.5rem;
+  width: calc(50rem - 8.5rem);
+  font-family: "Roboto";
+}
+
+ul.navigation-list li {
+  list-style: none;
+  justify-content: space-between;
+  padding: 40px 0.35px 0.16px;
+  margin: 0px 42px 48px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
