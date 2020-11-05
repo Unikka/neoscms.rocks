@@ -4,15 +4,20 @@ body {
   padding: 0;
 }
 
-nav.main {
-  display: flex;
-  flex-direction: row;
-  height: 6.25rem;
+header,
+.content,
+footer .inner-footer {
   width: 50rem;
   margin: 0 auto;
 }
 
-nav.main .logo {
+header {
+  display: flex;
+  flex-direction: row;
+  height: 6.25rem;
+}
+
+header .logo {
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -21,13 +26,17 @@ nav.main .logo {
   text-align: center;
 }
 
-nav.main .logo object {
+header .logo object {
   height: 10rem;
   width: 15rem;
   margin-top: -1rem;
 }
 
-ul.navigation-list {
+nav ul {
+  list-style: none;
+}
+
+nav.main ul.navigation-list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -36,7 +45,7 @@ ul.navigation-list {
   font-family: "Roboto";
 }
 
-ul.navigation-list li {
+nav.main ul.navigation-list li {
   list-style: none;
   justify-content: space-between;
   padding: 40px 0.35px 0.16px;
@@ -45,4 +54,32 @@ ul.navigation-list li {
 a {
   text-decoration: none;
   color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: -2.25rem;
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #28234c;
+  color: white;
+  transform: skewY(3deg);
+}
+
+footer .inner-footer {
+  transform: skewY(-3deg);
+}
+nav.footer ul a {
+  color: white;
+}
+
+nav.footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 66%;
+}
+
+nav.footer ul li {
+  width: 50%;
 }
